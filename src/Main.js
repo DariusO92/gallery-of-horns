@@ -5,24 +5,15 @@ import HornedBeast from './HornedBeast';
 class Main extends React.Component {
   render() {
     let hornB = [];
-    data.forEach((animal) => {
+    data.forEach((animal, idx) => {
       hornB.push(
         <article>
           <HornedBeast 
                 title={animal.title}
                 image_url={animal.image_url}
-                description={animal.description} 
+                description={animal.description}
+                key={idx}
               />
-          {/* <HornedBeast 
-                title={animal.title}
-                image_url={animal.image_url}
-                descripton={animal.description} 
-        />
-         <HornedBeast
-              title={animal.title}
-              image_url={animal.image_url}
-              descripton={animal.description} 
-        /> */}
           </article>
       )
     });
