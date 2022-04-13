@@ -5,19 +5,3 @@ div {
   width: fit-content;
 }
 
-div img {
-  width:fit-content 
-}
-div p {
-  font-size: 11px;
-  margin: auto;
-  display: inline-block;
-  margin-bottom: .5rem;
-}
-div p:last-of-type {
-  padding-left: 1rem;
-  cursor: pointer;
-}
-div p:last-of-type:hover {
-  color: purple;
-}
