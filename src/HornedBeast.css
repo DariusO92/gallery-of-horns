@@ -1,7 +1,21 @@
-div {
+/* div {
   border: 1px solid gray;
   padding: 1vw;
   margin-bottom: 1vw;
   width: fit-content;
+} */
+
+.card-body .card-text {
+  font-size: 11px;
+  margin: auto;
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+.card-body .card-text:last-of-type {
+  padding-left: 1rem;
+  cursor: pointer;
+}
+.card-body .card-text:last-of-type:hover {
+  color: purple;
 }
 
