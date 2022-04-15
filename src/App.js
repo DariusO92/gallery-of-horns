@@ -4,6 +4,8 @@ import Footer from './Footer';
 import Main from './Main'
 import data from './HornedB.json'
 import SelectedBeast from './SelectedBeast';
+import NumberOfHorns from './NumberOfHorns';
+import  ListGroup from 'react-bootstrap/ListGroup';
 //  import Modal from 'react-bootstrap/Modal';
 // import Row from 'react-bootstrap/Row';
 
@@ -31,6 +33,7 @@ class App extends React.Component {
 
     });
   };
+  beast = (data) => {this.state(data)};
 
   render(){
     return (
@@ -45,6 +48,8 @@ class App extends React.Component {
       title={this.state.title}
       image_url={this.state.image_url}
       description={this.state.description}
+      beast={this.beast}
+
       />
       <Footer/>
       <SelectedBeast

@@ -1,13 +1,15 @@
 import React from 'react';
 import './Main.css'
 import HornedBeast from './HornedBeast';
-
+import NumberOfHorns from './NumberOfHorns';
 
 class Main extends React.Component {
   render(){
     return (
-      // <Row xs={1} sm={3} md={4} lg={6}>
       <main>
+        <NumberOfHorns
+        beast={this.props.beast}
+        />
         {this.props.data.map((element, idx) => (
           <HornedBeast
           title={element.title}
@@ -15,6 +17,7 @@ class Main extends React.Component {
           description={element.description}
           key={idx}
           openModalHandler={this.props.openModalHandler}
+          // horns={data.horns}
         />
         )
         )
