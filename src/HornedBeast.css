@@ -8,7 +8,7 @@
 .card-body .card-text {
   font-size: 11px;
   margin: auto;
-  display: inline-block;
+  display: flex;
   margin-bottom: .5rem;
 }
 .card-body .card-text:last-of-type {

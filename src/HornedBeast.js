@@ -14,6 +14,7 @@ class HornedBeast extends React.Component {
     this.setState({
       clicked: this.state.clicked + 1
     });
+    this.props.openModalHandler(this.props.image_url, this.props.description, this.props.title)
   }
   handleImgClick = () => {
     this.showModalHandler(this.props.hornB);
@@ -23,18 +24,23 @@ class HornedBeast extends React.Component {
     return (
       <Col className="mb-5">
         <Card className="h-100">
-        <Card.Img
+        <Card.Img variant="top"
          onClick={this.handleClicked}
-        // onClickTwo={this.handleImgClick(this.props.showModalHandler)} 
         src={this.props.image_url} 
         alt={this.props.image_url} 
         />
          <Card.Body>
-      <div id={this.props.key}>
-        <h2>{this.props.title }</h2>
+      {/* <div{this.props.key}> */}
+        <Card.Title>
+        {this.props.title }
+        </Card.Title>
+        <Card.Text>
         <p>💚{this.state.clicked} favorites</p>
+        </Card.Text>
+        <Card.Text>
         <p>{this.props.description}</p>
-      </div>
+        </Card.Text>
+      {/* </div> */}
            </Card.Body> 
 
         </Card>
@@ -43,6 +49,6 @@ class HornedBeast extends React.Component {
 
     )
   }
-}
+};
 
 export default HornedBeast;
