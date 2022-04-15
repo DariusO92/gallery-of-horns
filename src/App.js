@@ -5,7 +5,6 @@ import Main from './Main'
 import data from './HornedB.json'
 import SelectedBeast from './SelectedBeast';
 import NumberOfHorns from './NumberOfHorns';
-import  ListGroup from 'react-bootstrap/ListGroup';
 //  import Modal from 'react-bootstrap/Modal';
 // import Row from 'react-bootstrap/Row';
 
